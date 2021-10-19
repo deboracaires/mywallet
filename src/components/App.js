@@ -5,6 +5,8 @@ import GlobalStyle from "../styles/globalStyle";
 import LoginPage from "./login/LoginPage.js";
 import SignUpPage from "./signup/SignUpPage.js";
 import PrincipalPage from "./principalPage/principalPage.js";
+import NewIn from "./registers/NewIn";
+import NewOut from "./registers/NewOut";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route path="/principal" exact>
           <PrincipalPage></PrincipalPage>
+        </Route>
+        <Route path="/entrada" exact>
+          <NewIn></NewIn>
+        </Route>
+        <Route path="/saida" exact>
+          <NewOut></NewOut>
         </Route>
 
       </Switch>

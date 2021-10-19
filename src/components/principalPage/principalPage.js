@@ -11,6 +11,14 @@ export default function PrincipalPage(){
     function goToLogInPage(){
         history.push("/");
     }
+
+    function goToNewIn(){
+        history.push("/entrada");
+    }
+
+    function goToNewOut(){
+        history.push("/saida");
+    }
     
     return(
         <ContainerPrincipalPage>
@@ -24,12 +32,12 @@ export default function PrincipalPage(){
                 <h1>Não há registros de entrada ou saída</h1>
             </Content>
             <BottomPrincipalPage>
-                <NewRegister>
-                    <FiPlusCircle color="#fff" size="22px"></FiPlusCircle>
+                <NewRegister onClick={goToNewIn}>
+                    <FiPlusCircle color="#fff" size="22px" ></FiPlusCircle>
                     <p>Nova entrada</p>
                 </NewRegister>
-                <NewRegister>
-                    <FiMinusCircle color="#fff" size="22px"></FiMinusCircle>
+                <NewRegister onClick={goToNewOut}>
+                    <FiMinusCircle color="#fff" size="22px" ></FiMinusCircle>
                     <p>Nova saída</p>
                 </NewRegister>
             </BottomPrincipalPage>

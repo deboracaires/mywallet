@@ -52,14 +52,18 @@ const Input = styled.input `
     height: 58px;
     border-radius: 5px;
     margin-bottom: 13px;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000; 
+
+
 
     ::placeholder {
-        font-size: 20px;
-        line-height: 23px;
+        
         color: #000; 
-        padding-left: 15px;
-
     }
+
 
 `;
 
@@ -71,9 +75,7 @@ const Button = styled.button `
     color: #fff;
     font-size: 20px;
     line-height: 23px;
-
-    
-
+    font-weight: 700;
 `
 const TextSignUp = styled.div `
     margin-top: 36px;
