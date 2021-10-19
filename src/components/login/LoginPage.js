@@ -10,7 +10,7 @@ export default function LoginPage(){
     }
     
     function goToInicialPage(){
-
+        history.push("/principal");
     }
 
     return (
